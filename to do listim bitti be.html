@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rrrrr</title>
+    <button onclick="lll()" >kaydet</button>
+    <style>
+        /* yapılacakların olduğu yer ul */
+        #uu{
+            position: relative;
+            height: auto;
+            width: 500px;
+            left: 500px;
+            top: 110px;
+        }
+        /* li inn olduğu yer */
+        #lii{
+            margin: 25px;
+        }
+        #lii:hover{
+            position: relative;
+            background-color:violet;
+        }
+      /* input */
+      #txx{
+        position: absolute;
+        height: 20px;
+        width: 350px;
+        bottom: 20px;
+        left: 500px;
+      }
+         
+    
+      
+    </style>
+</head>
+<body>
+    <button onclick="eekl()" >ekle </button>
+    <input type="text"  id="txx" placeholder="yazzz" >
+    
+    <div  id="uu">
+
+
+    </div>
+
+
+</textarea>
+  
+
+ 
+<script>
+    var uu=document.getElementById("uu");
+
+    function eekl(){
+        var yz=document.getElementById("txx").value;
+
+   var  li=document.createElement("li");
+   li.id="lii"
+  
+
+   
+var yağz=document.createTextNode(yz);
+uu.appendChild(li)
+li.appendChild(yağz);
+li.onclick= function(){
+    li.style.textDecoration="line-through"
+}
+/* yazıların üzerine çizmek */
+li.onclick= function(){
+    if(li.style.textDecoration=== "none" ){
+        li.style.textDecoration="line-through"
+    }else{
+        li.style.textDecoration="none"
+    }
+    
+}
+ 
+
+
+    }
+ 
+  
+      
+   
+
+</script>
+</body>
+</html>
